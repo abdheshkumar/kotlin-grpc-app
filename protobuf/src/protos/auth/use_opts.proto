@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package com.example.auth;
+import "auth/policy.proto";
+
+message OneMessage {
+  option (com.example.auth.message_auth_policy) = {
+    selector: "message-auth"
+  };
+
+  // Field level option, with repeated field.
+  int32 number = 1 [(com.example.auth.Wrapper.tags) = {name: "tag1"},
+    (com.example.auth.Wrapper.tags) = {name: "tag2"}];
+}
+
+// The greeting service definition.
+service Greeter {
+  option (com.example.auth.service_auth_policy).selector = "service-auth";
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {
+    option (com.example.auth.method_auth_policy) = {
+      selector: "method-auth"
+      enforcement_type: ENFORCEMENT_TYPE_ANY
+    };
+  }
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The request message containing the user's name.
+message HelloReply {
+  string name = 1;
+}

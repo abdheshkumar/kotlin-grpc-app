@@ -1,0 +1,3 @@
+```shell
+./gradlew :metrics:publishToMavenLocal
+```

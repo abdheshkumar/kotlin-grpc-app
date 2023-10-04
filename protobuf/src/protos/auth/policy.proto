@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package com.example.auth;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+  AuthPolicy message_auth_policy = 50002;
+}
+
+extend google.protobuf.MethodOptions {
+  AuthPolicy method_auth_policy = 50003;
+}
+
+extend google.protobuf.ServiceOptions {
+  AuthPolicy service_auth_policy = 50004;
+}
+
+message AuthPolicy {
+  string selector = 1;
+  enum EnforcementType {
+    ENFORCEMENT_TYPE_INVALID = 0;
+    ENFORCEMENT_TYPE_ANY = 2;
+    ENFORCEMENT_TYPE_ALL = 3;
+  }
+  EnforcementType enforcement_type = 2;
+}
+
+message Tag {
+  string name = 1;
+}
+
+// Extensions can be defined inside messages,
+// But there is no relationship between the enclosing message and the
+// extension - it only uses for namespace purposes.
+message Wrapper {
+  extend google.protobuf.FieldOptions {
+    repeated Tag tags = 50003;
+  }
+}

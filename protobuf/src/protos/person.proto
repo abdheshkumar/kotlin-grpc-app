@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package examplepb;
+option java_outer_classname = "PersonProto";
+option java_multiple_files = true;
+import "validate/validate.proto";
+
+message Person {
+  uint64 id = 1 [(validate.rules).uint64.gt = 999];
+
+  string email = 2 [(validate.rules).string.email = true];
+
+  string name = 3;
+
+  Location home = 4 [(validate.rules).message.required = true];
+
+  /**
+ * Option 'unwrap_builders' ignored.
+ * Not supported when combined with 'java_multiple_files = true' and nested messages
+ * Fallback to using static import on object 'PersonProtoBuilders'
+ */
+  message Location {
+    double lat = 1 [(validate.rules).double = {gte: -90,  lte: 90}];
+    double lng = 2 [(validate.rules).double = {gte: -180, lte: 180}];
+  }
+}

@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+package com.examples.helloworld;
+
+option java_multiple_files = true;
+option java_package = "com.helloworld.v1";
+option java_outer_classname = "HelloWorldApiProto";
+
+// An example Hello World service that takes in an id and spits out a string that contains "Hello World".
+service HelloWorldAPI {
+  rpc HelloWorld(HelloWorldRequest) returns (HelloWorldResponse);
+
+  // Stream example of incoming and outgoing stream of a Hello World conversation.
+  rpc HelloWorldConversation(stream HelloWorldConversationRequest) returns (stream HelloWorldConversationResponse);
+
+  // Stream example message in, stream out.
+  rpc HelloWorldChatty(HelloWorldChattyRequest) returns (stream HelloWorldChattyResponse);
+
+  // Stream example stream in single response out.
+  rpc HelloWorldQuiet(stream HelloWorldQuietRequest) returns (HelloWorldQuietResponse);
+
+  // This API is used for testing the protos infra/framework to get around the backwards compatibility checks. Only add new fields.
+  rpc HelloWorldUsedForTestingDoNotUse(HelloWorldUsedForTestingDoNotUseRequest) returns (HelloWorldUsedForTestingDoNotUseResponse);
+}
+
+message HelloWorldRequest {
+  // A random identifier that has no meaning for this example.
+  string id = 1;
+}
+
+message HelloWorldConversationRequest {
+  // A random identifier that has no meaning for this example.
+  string id = 1;
+}
+
+message HelloWorldChattyRequest {
+  //some random identifier that has no meaning whatsoever
+  string id = 1;
+}
+
+message HelloWorldQuietRequest {
+  //some random identifier that has no meaning whatsoever
+  string id = 1;
+}
+
+// Append test fields 'field_x' as needed.
+message HelloWorldUsedForTestingDoNotUseRequest {
+  // Test field 1
+  string field_1 = 1;
+}
+
+message HelloWorldResponse {
+  // Contains the "Hello World" string.
+  string hello_world_string = 1;
+}
+
+message HelloWorldConversationResponse {
+  // Contains the "Hello World" string.
+  string hello_world_string = 1;
+}
+
+message HelloWorldChattyResponse{
+  // Contains the "Hello World" string.
+  string hello_world_string = 1;
+}
+
+message HelloWorldQuietResponse{
+  // Contains the "Hello World" string.
+  string hello_world_string = 1;
+}
+
+// Append test fields 'field_x' as needed.
+message HelloWorldUsedForTestingDoNotUseResponse {
+  // Test field 1
+  string field_1 = 1;
+}
+
