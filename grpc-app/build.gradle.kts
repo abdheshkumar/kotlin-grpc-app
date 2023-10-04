@@ -8,7 +8,7 @@ val grpcVersion: String by project
 plugins {
     application
     kotlin("jvm")
-    id("com.google.cloud.tools.jib") version "3.3.1"
+    id("com.google.cloud.tools.jib") version "3.4.0"
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_18
