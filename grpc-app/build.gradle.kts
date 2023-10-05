@@ -49,7 +49,7 @@ dependencies {
 
     implementation("com.sksamuel.hoplite:hoplite-core:2.7.5")
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.2")
-    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.2")
+    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.5")
     implementation("org.apache.logging.log4j:log4j-core:2.20.0")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.20.0")
     implementation("org.apache.kafka:kafka-clients:3.6.0")
