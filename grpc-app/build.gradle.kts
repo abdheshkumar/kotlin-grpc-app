@@ -34,7 +34,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization:2.2.4")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.2.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
-    implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.2.4")
+    implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.3.5")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
