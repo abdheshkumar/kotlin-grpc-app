@@ -27,7 +27,7 @@ dependencies {
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.0")
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.5")
 
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.4")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.7.2")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.4")
     testImplementation("io.kotest:kotest-property-jvm:5.7.2")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.5.4")
