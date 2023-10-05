@@ -38,7 +38,7 @@ dependencies {
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
     testImplementation("io.kotest:kotest-property-jvm:5.5.5")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.5.5")
-    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.3.0")
+    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.4.0")
 }
 
 tasks.withType<KotlinCompile> {
