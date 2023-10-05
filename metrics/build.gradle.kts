@@ -17,13 +17,13 @@ dependencies {
     implementation("io.arrow-kt:arrow-core")
     implementation("io.arrow-kt:arrow-fx-coroutines")
 
-    implementation("io.micrometer:micrometer-registry-prometheus:1.10.2")
+    implementation("io.micrometer:micrometer-registry-prometheus:1.11.4")
     implementation("io.micrometer:micrometer-registry-jmx:1.10.2")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("com.sksamuel.hoplite:hoplite-core:2.7.0")
+    implementation("com.sksamuel.hoplite:hoplite-core:2.7.5")
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.0")
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.0")
 
