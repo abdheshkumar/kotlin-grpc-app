@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.1.3"))
+    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
     implementation("io.arrow-kt:arrow-core")
     implementation("io.arrow-kt:arrow-fx-coroutines")
 
@@ -25,11 +25,11 @@ dependencies {
 
     implementation("com.sksamuel.hoplite:hoplite-core:2.7.5")
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.5")
-    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.0")
+    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.5")
 
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.4")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.7.2")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.4")
-    testImplementation("io.kotest:kotest-property-jvm:5.5.4")
+    testImplementation("io.kotest:kotest-property-jvm:5.7.2")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.5.4")
 }
 

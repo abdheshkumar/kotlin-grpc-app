@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.1.5"))
+    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
     implementation("io.arrow-kt:arrow-core")
     implementation("io.arrow-kt:arrow-fx-coroutines")
 
@@ -34,11 +34,11 @@ dependencies {
 
     // Test
     testImplementation("org.testcontainers:kafka:1.19.1")
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.5")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.7.2")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
-    testImplementation("io.kotest:kotest-property-jvm:5.5.5")
+    testImplementation("io.kotest:kotest-property-jvm:5.7.2")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.5.5")
-    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.3.0")
+    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.4.0")
 }
 
 tasks.withType<KotlinCompile> {

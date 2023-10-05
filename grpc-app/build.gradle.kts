@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.1.5"))
+    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
     implementation("io.arrow-kt:arrow-core")
     implementation("io.arrow-kt:arrow-fx-coroutines")
     implementation("io.arrow-kt:arrow-fx-stm")
@@ -49,7 +49,7 @@ dependencies {
 
     implementation("com.sksamuel.hoplite:hoplite-core:2.7.5")
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.5")
-    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.2")
+    implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.5")
     implementation("org.apache.logging.log4j:log4j-core:2.20.0")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.20.0")
     implementation("org.apache.kafka:kafka-clients:3.6.0")
@@ -59,11 +59,11 @@ dependencies {
     implementation(project(":metrics"))
     // Test
     testImplementation("org.testcontainers:kafka:1.19.1")
-    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.5")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.7.2")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
-    testImplementation("io.kotest:kotest-property-jvm:5.5.5")
+    testImplementation("io.kotest:kotest-property-jvm:5.7.2")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.5.5")
-    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.3.0")
+    testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.4.0")
 
 }
 
