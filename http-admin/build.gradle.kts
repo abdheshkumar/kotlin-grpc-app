@@ -26,7 +26,7 @@ dependencies {
     implementation("io.micrometer:micrometer-registry-jmx:1.10.5")
 
     implementation("io.ktor:ktor-server-jvm:2.2.4")
-    implementation("io.ktor:ktor-server-netty-jvm:2.1.3")
+    implementation("io.ktor:ktor-server-netty-jvm:2.3.4")
     implementation("io.ktor:ktor-serialization:2.2.4")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.2.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
