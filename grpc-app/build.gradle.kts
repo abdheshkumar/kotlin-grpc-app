@@ -29,7 +29,7 @@ dependencies {
     implementation("io.micrometer:micrometer-registry-jmx:1.11.4")
     implementation("com.be-hase.grpc-micrometer:grpc-micrometer:0.0.2")
 
-    implementation("io.ktor:ktor-server-jvm:2.2.4")
+    implementation("io.ktor:ktor-server-jvm:2.3.5")
     implementation("io.ktor:ktor-server-netty-jvm:2.3.4")
     implementation("io.ktor:ktor-serialization:2.2.4")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.2.4")
