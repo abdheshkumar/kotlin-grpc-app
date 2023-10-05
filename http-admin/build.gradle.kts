@@ -23,7 +23,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-fx-coroutines")
 
     implementation("io.micrometer:micrometer-registry-prometheus:1.11.4")
-    implementation("io.micrometer:micrometer-registry-jmx:1.10.5")
+    implementation("io.micrometer:micrometer-registry-jmx:1.11.4")
 
     implementation("io.ktor:ktor-server-jvm:2.2.4")
     implementation("io.ktor:ktor-server-netty-jvm:2.3.4")
