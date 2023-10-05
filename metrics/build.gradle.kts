@@ -23,7 +23,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("com.sksamuel.hoplite:hoplite-core:2.7.0")
+    implementation("com.sksamuel.hoplite:hoplite-core:2.7.5")
     implementation("com.sksamuel.hoplite:hoplite-hocon:2.7.0")
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.0")
 
