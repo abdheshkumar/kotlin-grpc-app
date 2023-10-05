@@ -33,7 +33,7 @@ dependencies {
     implementation("io.grpc:grpc-stub:$grpcVersion")
 
     // Test
-    testImplementation("org.testcontainers:kafka:1.17.6")
+    testImplementation("org.testcontainers:kafka:1.19.1")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.5")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.5.5")
     testImplementation("io.kotest:kotest-property-jvm:5.5.5")
