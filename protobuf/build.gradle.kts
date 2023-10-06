@@ -53,11 +53,11 @@ java {
 sourceSets {
     main {
         java {
-            srcDir("${project.buildDir}/generated/source/proto/main/grpc")
-            srcDir("${project.buildDir}/generated/source/proto/main/grpckt")
-            srcDir("${project.buildDir}/generated/source/proto/main/java")
-            srcDir("${project.buildDir}/generated/source/proto/main/kotlin")
-            srcDir("${project.buildDir}/generated/source/proto/main/java-pgv")
+            srcDir("${project.layout.buildDirectory}/generated/source/proto/main/grpc")
+            srcDir("${project.layout.buildDirectory}/generated/source/proto/main/grpckt")
+            srcDir("${project.layout.buildDirectory}/generated/source/proto/main/java")
+            srcDir("${project.layout.buildDirectory}/generated/source/proto/main/kotlin")
+            srcDir("${project.layout.buildDirectory}/generated/source/proto/main/java-pgv")
         }
 
         proto {
