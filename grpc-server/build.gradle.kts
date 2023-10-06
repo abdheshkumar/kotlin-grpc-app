@@ -10,7 +10,7 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("io.arrow-kt:arrow-core:1.1.5")
-    implementation("io.arrow-kt:arrow-fx-coroutines:1.1.5")
+    implementation("io.arrow-kt:arrow-fx-coroutines:1.2.1")
     implementation("io.micrometer:micrometer-core:1.11.4")
     implementation("com.be-hase.grpc-micrometer:grpc-micrometer:0.0.2")
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
