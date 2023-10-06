@@ -1,6 +1,5 @@
 package e2e.com.abtech
 
-import com.abtech.app.Environment
 import com.helloworld.v1.HelloWorldAPIGrpcKt
 import com.helloworld.v1.HelloWorldRequest
 import io.kotest.assertions.arrow.fx.coroutines.ResourceExtension
