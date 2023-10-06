@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: '18'
         distribution: 'temurin'
-        cache: maven
+        cache: gradle
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build libraries with Gradle
