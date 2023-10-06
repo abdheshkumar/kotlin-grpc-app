@@ -1,0 +1,21 @@
+name: Java CI with Gradle and Maven
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 18
+      uses: actions/setup-java@v3
+      with:
+        java-version: '18'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@v2
+    - name: Build libraries with Gradle
+      run: ./gradlew clean build
