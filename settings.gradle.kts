@@ -2,8 +2,9 @@ pluginManagement {
     val kotlinVersion: String by settings
     val protobufPluginVersion: String by settings
     plugins {
-        kotlin("jvm") version kotlinVersion apply false
-        id("com.google.protobuf") version protobufPluginVersion apply false
+        application
+        kotlin("jvm")
+        id("com.google.protobuf") version protobufPluginVersion
     }
 }
 rootProject.name = "kotlin-grpc-app"

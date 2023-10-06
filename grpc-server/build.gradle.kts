@@ -7,18 +7,10 @@ plugins {
     `maven-publish`
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_18
-java.targetCompatibility = JavaVersion.VERSION_18
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
-
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
-    implementation("io.arrow-kt:arrow-core")
-    implementation("io.arrow-kt:arrow-fx-coroutines")
+    implementation(kotlin("stdlib"))
+    implementation("io.arrow-kt:arrow-core:1.1.5")
+    implementation("io.arrow-kt:arrow-fx-coroutines:1.1.5")
     implementation("io.micrometer:micrometer-core:1.11.4")
     implementation("com.be-hase.grpc-micrometer:grpc-micrometer:0.0.2")
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
@@ -26,17 +18,6 @@ dependencies {
     implementation("io.grpc:grpc-protobuf:$grpcVersion")
     implementation("io.grpc:grpc-services:$grpcVersion")
     implementation("io.grpc:grpc-stub:$grpcVersion")
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "18"
-    }
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
 }
 
 publishing {
@@ -47,11 +28,5 @@ publishing {
             version = "0.0.1-SNAPSHOT"
             from(components["java"])
         }
-    }
-}
-
-tasks {
-    jar {
-        enabled = true
     }
 }

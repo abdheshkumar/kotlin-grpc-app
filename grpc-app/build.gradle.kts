@@ -11,18 +11,10 @@ plugins {
     id("com.google.cloud.tools.jib") version "3.4.0"
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_18
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
-
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
-    implementation("io.arrow-kt:arrow-core")
-    implementation("io.arrow-kt:arrow-fx-coroutines")
-    implementation("io.arrow-kt:arrow-fx-stm")
+    implementation("io.arrow-kt:arrow-core:1.1.5")
+    implementation("io.arrow-kt:arrow-fx-coroutines:1.1.5")
+    implementation("io.arrow-kt:arrow-fx-stm:1.1.5")
     implementation("io.arrow-kt:suspendapp:0.4.0")
 
     implementation("io.micrometer:micrometer-registry-prometheus:1.11.4")
@@ -35,12 +27,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.5")
     implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.3.5")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
-
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
-
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
     implementation("io.grpc:grpc-netty-shaded:$grpcVersion")
     implementation("io.grpc:grpc-protobuf:$grpcVersion")
@@ -67,20 +54,9 @@ dependencies {
 
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "18"
-    }
-}
-
 application {
     mainClass.set("com.abtech.app.MainKt")
     applicationDefaultJvmArgs = listOf()
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
 }
 
 jib {

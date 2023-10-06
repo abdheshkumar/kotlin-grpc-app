@@ -34,7 +34,6 @@ dependencies {
     implementation("io.grpc:grpc-services:$grpcVersion")
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
     implementation("com.google.protobuf:protobuf-kotlin:$protobufVersion")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
     implementation("io.envoyproxy.protoc-gen-validate:pgv-java-stub:$protoValidatorVersion")
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")

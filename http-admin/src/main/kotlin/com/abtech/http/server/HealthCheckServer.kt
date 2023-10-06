@@ -1,7 +1,7 @@
 package com.abtech.http.server
 
 import arrow.fx.coroutines.Resource
-import arrow.fx.coroutines.continuations.resource
+import arrow.fx.coroutines.resource
 import com.abtech.http.routes.adminModule
 import com.abtech.metrics.MetricsProperties
 import com.abtech.metrics.meterRegistryResource
@@ -28,7 +28,7 @@ fun <TEngine : ApplicationEngine, TConfiguration : ApplicationEngine.Configurati
 ): Resource<Pair<ApplicationEngine, MeterRegistry>> =
     resource {
         val (meterRegistry, prometheusMeterRegistry) = meterRegistryResource(metrics).bind()
-        Resource({
+        resource({
             embeddedServer(factory, host = host, port = port, configure = configure) {
             }.apply {
                 val applicationEngine = start()

@@ -1,6 +1,7 @@
 package com.abtech.metrics
 
 import arrow.fx.coroutines.Resource
+import arrow.fx.coroutines.resource
 import io.micrometer.core.instrument.Clock
 import io.micrometer.core.instrument.MeterRegistry
 import io.micrometer.core.instrument.Metrics
@@ -20,7 +21,7 @@ fun meterRegistryResource(
     filters: List<MeterFilter> = emptyList(),
     binders: List<MeterBinder> = emptyList()
 ): Resource<Pair<MeterRegistry, PrometheusMeterRegistry>> =
-    Resource({
+    resource({
         val compositeMeterRegistry = CompositeMeterRegistry()
         val jmxMeterRegistry = JmxMeterRegistry(
             JmxConfig.DEFAULT,

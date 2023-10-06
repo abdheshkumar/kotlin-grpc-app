@@ -2,30 +2,21 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val grpcKotlinVersion: String by project
 val grpcVersion: String by project
+val kotlinVersion: String by project
 
 plugins {
     kotlin("jvm")
     `maven-publish`
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_18
-java.targetCompatibility = JavaVersion.VERSION_18
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
-
 dependencies {
-    implementation(platform("io.arrow-kt:arrow-stack:1.2.1"))
-    implementation("io.arrow-kt:arrow-core")
-    implementation("io.arrow-kt:arrow-fx-coroutines")
+    implementation("io.arrow-kt:arrow-core:1.1.5")
+    implementation("io.arrow-kt:arrow-fx-coroutines:1.1.5")
 
     implementation("io.micrometer:micrometer-registry-prometheus:1.11.4")
     implementation("io.micrometer:micrometer-registry-jmx:1.11.4")
     implementation(project(":grpc-app"))
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(project(":protobuf"))
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
     implementation("io.grpc:grpc-netty-shaded:$grpcVersion")
     implementation("io.grpc:grpc-protobuf:$grpcVersion")
@@ -39,17 +30,6 @@ dependencies {
     testImplementation("io.kotest:kotest-property-jvm:5.7.2")
     testImplementation("io.kotest:kotest-framework-datatest-jvm:5.7.2")
     testImplementation("io.kotest.extensions:kotest-assertions-arrow-fx-coroutines-jvm:1.4.0")
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "18"
-    }
-}
-
-tasks.withType<Test>().configureEach {
-    useJUnitPlatform()
 }
 
 publishing {
