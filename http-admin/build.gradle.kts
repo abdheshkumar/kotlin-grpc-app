@@ -21,9 +21,9 @@ dependencies {
     implementation("io.ktor:ktor-server-netty-jvm:2.3.6")
     implementation("io.ktor:ktor-serialization:2.3.6")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.6")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.1")
     implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.3.6")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
     api(project(":metrics"))
     // Test
