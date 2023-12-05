@@ -39,7 +39,7 @@ dependencies {
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.7.5")
     implementation("org.apache.logging.log4j:log4j-core:2.22.0")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.22.0")
-    implementation("org.apache.kafka:kafka-clients:3.6.0")
+    implementation("org.apache.kafka:kafka-clients:3.6.1")
     implementation(project(":protobuf"))
     implementation(project(":grpc-server"))
     implementation(project(":http-admin"))
