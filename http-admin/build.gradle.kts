@@ -14,7 +14,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-core:1.2.1")
     implementation("io.arrow-kt:arrow-fx-coroutines:1.2.1")
 
-    implementation("io.micrometer:micrometer-registry-prometheus:1.12.0")
+    implementation("io.micrometer:micrometer-registry-prometheus:1.12.1")
     implementation("io.micrometer:micrometer-registry-jmx:1.12.1")
 
     implementation("io.ktor:ktor-server-jvm:2.3.7")
