@@ -14,7 +14,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-fx-coroutines:1.2.1")
 
     implementation("io.micrometer:micrometer-registry-prometheus:1.12.2")
-    implementation("io.micrometer:micrometer-registry-jmx:1.12.2")
+    implementation("io.micrometer:micrometer-registry-jmx:1.12.3")
     implementation(project(":grpc-app"))
     implementation(project(":protobuf"))
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
