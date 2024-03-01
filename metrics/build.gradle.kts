@@ -8,7 +8,7 @@ plugins {
 
 
 dependencies {
-    implementation("io.arrow-kt:arrow-core:1.2.2")
+    implementation("io.arrow-kt:arrow-core:1.2.3")
     implementation("io.arrow-kt:arrow-fx-coroutines:1.2.1")
 
     implementation("io.micrometer:micrometer-registry-prometheus:1.12.3")
