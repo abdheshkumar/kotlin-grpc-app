@@ -9,7 +9,7 @@ plugins {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("io.arrow-kt:arrow-core:1.2.3")
+    implementation("io.arrow-kt:arrow-core:1.2.4")
     implementation("io.arrow-kt:arrow-fx-coroutines:1.2.3")
     implementation("io.micrometer:micrometer-core:1.12.4")
     implementation("com.be-hase.grpc-micrometer:grpc-micrometer:0.0.2")
