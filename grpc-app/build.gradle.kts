@@ -25,7 +25,7 @@ dependencies {
     implementation("io.ktor:ktor-server-netty-jvm:2.3.10")
     implementation("io.ktor:ktor-serialization:2.3.11")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.11")
-    implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.3.10")
+    implementation("io.ktor:ktor-server-metrics-micrometer-jvm:2.3.11")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion")
     implementation("io.grpc:grpc-kotlin-stub:$grpcKotlinVersion")
