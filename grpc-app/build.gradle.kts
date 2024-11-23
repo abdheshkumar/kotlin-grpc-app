@@ -45,7 +45,7 @@ dependencies {
     implementation(project(":http-admin"))
     implementation(project(":metrics"))
     // Test
-    testImplementation("org.testcontainers:kafka:1.20.3")
+    testImplementation("org.testcontainers:kafka:1.20.4")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:5.9.1")
     testImplementation("io.kotest:kotest-assertions-core-jvm:5.9.1")
     testImplementation("io.kotest:kotest-property-jvm:5.9.1")
