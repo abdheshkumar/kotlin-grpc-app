@@ -14,7 +14,7 @@ dependencies {
     implementation("io.micrometer:micrometer-registry-prometheus:1.12.5")
     implementation("io.micrometer:micrometer-registry-jmx:1.14.1")
     implementation("com.sksamuel.hoplite:hoplite-core:2.9.0")
-    implementation("com.sksamuel.hoplite:hoplite-hocon:2.8.2")
+    implementation("com.sksamuel.hoplite:hoplite-hocon:2.9.0")
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.8.2")
 
     testImplementation("io.kotest:kotest-runner-junit5-jvm:5.9.1")

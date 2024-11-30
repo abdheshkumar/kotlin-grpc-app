@@ -35,7 +35,7 @@ dependencies {
     implementation("io.grpc:grpc-stub:$grpcVersion")
 
     implementation("com.sksamuel.hoplite:hoplite-core:2.9.0")
-    implementation("com.sksamuel.hoplite:hoplite-hocon:2.8.2")
+    implementation("com.sksamuel.hoplite:hoplite-hocon:2.9.0")
     implementation("com.sksamuel.hoplite:hoplite-yaml:2.8.2")
     implementation("org.apache.logging.log4j:log4j-core:2.24.2")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.24.2")
