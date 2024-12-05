@@ -13,7 +13,7 @@ plugins {
 
 dependencies {
     implementation("io.arrow-kt:arrow-core:1.2.4")
-    implementation("io.arrow-kt:arrow-fx-coroutines:1.2.4")
+    implementation("io.arrow-kt:arrow-fx-coroutines:2.0.0")
     implementation("io.arrow-kt:arrow-fx-stm:1.2.4")
     implementation("io.arrow-kt:suspendapp:0.4.0")
 
