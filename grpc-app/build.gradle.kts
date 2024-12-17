@@ -17,7 +17,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-fx-stm:1.2.4")
     implementation("io.arrow-kt:suspendapp:0.4.0")
 
-    implementation("io.micrometer:micrometer-registry-prometheus:1.12.5")
+    implementation("io.micrometer:micrometer-registry-prometheus:1.14.2")
     implementation("io.micrometer:micrometer-registry-jmx:1.14.2")
     implementation("com.be-hase.grpc-micrometer:grpc-micrometer:0.0.2")
 
